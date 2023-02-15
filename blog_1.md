@@ -20,9 +20,7 @@ Basic syntax of markdown based on github.
 http://example.com
   
 ~~love~~
-  
-<u>love</u>
-  
+    
 **love**
   
 *love*
@@ -30,7 +28,6 @@ http://example.com
 love<sup>2</sup>
   
 love<sub>2</sub>
-\
   
 * **Tabel**
 
