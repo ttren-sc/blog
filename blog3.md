@@ -4,8 +4,8 @@
 会出现基因id之间一对多情况，现在记录一下其他人的处理方法，作为参考。
   
 ### 使用clusterprofiler将基因ENSEMBL ID转换为SYMBOL ID时，会出现两种情况：  
-* ENSEMBL ID对应多个SYMBOL ID
-* SYMBOL ID对应多个ENSEMBL ID
+* 1个ENSEMBL ID对应多个SYMBOL ID
+* 多个ENSEMBL ID对应1个SYMBOL ID
   
 ### 如何解决？
 很遗憾，目前为止，并没有找到一个统一的解决方案。
@@ -16,7 +16,7 @@
   
 另外，需要弄清楚需要使用基因表达数据研究什么问题？如果使用GSEA做基因富集分析，有研究表示需要直接删除这些由于基因ID转换产生的重复基因。
   
-最后，需要注意的是，不应该合并相同SYMBOL ID对应的基因表达值（不同基因被标记为相同的symbol是很常见的），有建议表示可以选取基因表达值最大的ENSEMBL ID。
+最后，需要注意的是，对于多个ENSEMBL ID对应1个SYMBOL ID的情况，不应该直接合并相同ENSEMBL ID对应的基因表达值（不同基因被标记为相同的symbol是很常见的），有建议表示可以选取基因表达值最大的ENSEMBL ID。
   
 -------
 References
